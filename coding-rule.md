@@ -1,14 +1,12 @@
-# Coding Rule
+# Static Site Coding Rule
 
 
 ## Environment
-
+Javascript CSS HTML
 **tab** : space 2 length
 
 
-
 ## HTML
-
 ✎**Document**  
 Language Japanese
 ``<html lang="ja">``
@@ -16,7 +14,7 @@ Language Japanese
 ✎**External link**  
 外部サイトへのリンクには``rel="noreffere noopener"``を付与してください。  
 ``<a href="" target="_blank">...</a>``  
-External link with ``rel="noreffere noopener"`` add params
+Please add ``rel = "noreffere no opener"`` to the link to the external site.
 
 
 ✎**Image file format**  
@@ -29,8 +27,8 @@ vector image is use ``svg(XML)``
 
 ✎**use svg**  
 svgを利用する場合は以下の2つの方法を使ってください。  
-not write in HTML Document
-use ``<img src="">`` or ``<use href="">`` in path
+not write on HTML Document.
+use ``<img src="">`` or ``<use href="">``  
 
 ✎**input wrapper use label and fieldset**  
 ```html
@@ -50,7 +48,6 @@ or
 
 
 ## StyleSheet
-
 ✎**Post CSS** : Sass | Scss  
 ✎**Rule** : BEM | SMACSS | FLOCSS
 
@@ -78,12 +75,12 @@ or
 ✎**Not use !important**  
 
 !importantは使わずに、ネストで有効にしてください。  
-not foce extends style  
+not use ``!important``
 
 
 ✎**No HTML specified**  
 直接HTMLを指定せず。クラス名で指定してください。  
-write except for reset style 
+write except to reset.css  
 ```html
 <!-- HTML -->
 <p class="text">...</p>
@@ -102,7 +99,7 @@ p { font-size: 18px; } <!-- no specify TagName -->
 
 ✎**Media query**  
 メディアクエリは指定したスタイルの記述の中で記述してください。  
-nest in write media query params
+write media query params in nest
 ```css
 .header {
   padding: 28px;
@@ -121,22 +118,13 @@ nest in write media query params
 }
 ```
 
-
-
 ### Responsive
 フレキシブルにコーディングを行ってください。  
 デザインファイルにあるアートボードサイズの時は、  
 デザイン通りにコーディングしてください。  
 Flexible Layout
 
-
-
-
-
 ## Javascript
-
 ✎**webpack** : Babel, ES6
-
-
 
 ## Other
